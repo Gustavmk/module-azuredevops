@@ -1,18 +1,20 @@
+# Make sure to set the following environment variables:
+#   AZDO_PERSONAL_ACCESS_TOKEN
+#   AZDO_ORG_SERVICE_URL
+
+
 terraform {
   required_version = ">= 0.14.0"
 
   required_providers {
     azuredevops = {
       source  = "microsoft/azuredevops"
-      version = "~> 0.1.0"
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 2.41.0"
     }
     template = {
       source  = "hashicorp/template"
-      version = "~> 2.1.2"
     }
   }
 
