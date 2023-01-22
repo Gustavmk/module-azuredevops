@@ -1,6 +1,19 @@
 # Make sure to set the following environment variables:
 #   AZDO_PERSONAL_ACCESS_TOKEN
 #   AZDO_ORG_SERVICE_URL
+terraform {
+  required_providers {
+    azuredevops = {
+      source = "microsoft/azuredevops"
+    }
+    azurerm = {
+      source = "hashicorp/azurerm"
+    }
+    template = {
+      source = "hashicorp/template"
+    }
+  }
+}
 
 provider "azuredevops" {}
 provider "azuread" {}
