@@ -7,13 +7,13 @@ terraform {
 
   required_providers {
     azuredevops = {
-      source  = "microsoft/azuredevops"
+      source = "microsoft/azuredevops"
     }
     azurerm = {
-      source  = "hashicorp/azurerm"
+      source = "hashicorp/azurerm"
     }
     template = {
-      source  = "hashicorp/template"
+      source = "hashicorp/template"
     }
   }
 
@@ -21,7 +21,6 @@ terraform {
 }
 
 provider "azuread" {}
-provider "azuredevops" {}
 provider "azurerm" {
   features {
     key_vault {
