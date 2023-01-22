@@ -2,7 +2,6 @@
 #   AZDO_PERSONAL_ACCESS_TOKEN
 #   AZDO_ORG_SERVICE_URL
 
-
 terraform {
   required_version = ">= 0.14.0"
 
