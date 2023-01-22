@@ -3,8 +3,6 @@
 #   AZDO_ORG_SERVICE_URL
 
 terraform {
-  required_version = ">= 0.14.0"
-
   required_providers {
     azuredevops = {
       source = "microsoft/azuredevops"
@@ -20,6 +18,7 @@ terraform {
   #  backend "azurerm" {}
 }
 
+provider "azuredevops" {}
 provider "azuread" {}
 provider "azurerm" {
   features {
@@ -28,6 +27,7 @@ provider "azurerm" {
     }
   }
 }
+
 
 module "project_test" {
   source = "git::https://github.com/Gustavmk/module-azuredevops.git"
