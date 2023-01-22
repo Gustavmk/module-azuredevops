@@ -9,7 +9,7 @@ variable "proj_description" {
 }
 
 variable "proj_visibility" {
-  description = "Project visibility."
+  description = "Project visibility. Possible Values: public or private"
   type        = string
   default     = "private"
 }

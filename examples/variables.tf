@@ -1,0 +1,9 @@
+variable "github_pat" {}
+variable "github_serviceendpoint_name" {}
+variable "proj_description" {}
+variable "proj_name" {}
+variable "proj_visibility" {}
+variable "vg_allow_access" {}
+variable "vg_description" {}
+variable "vg_name" {}
+variable "vg_variables" {}

@@ -29,13 +29,13 @@ provider "azurerm" {
 module "project_test" {
   source = "git::https://github.com/Gustavmk/module-azuredevops.git"
 
-  github_pat                  = ""
-  github_serviceendpoint_name = ""
-  proj_description            = ""
-  proj_name                   = ""
+  github_pat                  = var.github_pat
+  github_serviceendpoint_name = var.github_serviceendpoint_name
+  proj_description            = var.proj_description
+  proj_name                   = var.proj_name
   proj_visibility             = "public"
   vg_allow_access             = true
-  vg_description              = ""
-  vg_name                     = ""
-  vg_variables                = ""
+  vg_description              = var.vg_description
+  vg_name                     = var.vg_name
+  vg_variables                = var.vg_variables
 }
